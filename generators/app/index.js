@@ -7,11 +7,11 @@ module.exports = class extends Generator {
 
 	writing() {
     this.fs.copy(
-      this.templatePath('_eslintignore'),
+      this.templatePath('.eslintignore'),
       this.destinationPath('.eslintignore')
     );
 		this.fs.copy(
-			this.templatePath('_eslintrc.js'),
+			this.templatePath('.eslintrc.js'),
 			this.destinationPath('.eslintrc.js')
 		);
 		this.fs.copy(
@@ -19,11 +19,11 @@ module.exports = class extends Generator {
 			this.destinationPath('gulpfile.js')
 		);
     this.fs.copy(
-      this.templatePath('_prettierignore'),
+      this.templatePath('.prettierignore'),
       this.destinationPath('.prettierignore')
     );
     this.fs.copy(
-      this.templatePath('_prettierrc.js'),
+      this.templatePath('.prettierrc.js'),
       this.destinationPath('.prettierrc.js')
     );
 		this.fs.copy(
