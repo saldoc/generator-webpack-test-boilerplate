@@ -15,8 +15,8 @@ module.exports = class extends Generator {
 			this.destinationPath('.eslintrc.js')
 		);
 		this.fs.copy(
-			this.templatePath('gulpfile.js'),
-			this.destinationPath('gulpfile.js')
+			this.templatePath('_gitignore'),
+			this.destinationPath('.gitignore')
 		);
     this.fs.copy(
       this.templatePath('.prettierignore'),
@@ -26,10 +26,6 @@ module.exports = class extends Generator {
       this.templatePath('.prettierrc.js'),
       this.destinationPath('.prettierrc.js')
     );
-		this.fs.copy(
-			this.templatePath('_gitignore'),
-			this.destinationPath('.gitignore')
-		);
 		this.fs.copy(
 			this.templatePath('package-lock.json'),
 			this.destinationPath('package-lock.json')
