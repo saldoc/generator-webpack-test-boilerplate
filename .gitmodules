@@ -1,0 +1,3 @@
+[submodule "generators/app/templates"]
+	path = generators/app/templates
+	url = https://github.com/saldoc/webpack-test-boilerplate
